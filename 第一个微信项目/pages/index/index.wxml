@@ -1,0 +1,22 @@
+<view class="page-body">  
+<view class="page-body-form">  
+    <view  class="page-body-form-key" style="margin-top:20px" bindtap="getLocation">
+      <text class="page-body-form-key">{{city}}</text>  
+      <image style="width:18px;height:15px;" src="./定位.png" />
+    </view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="page-body-form-key">
+           当前选择：{{city}}
+        </view>
+    </picker>
+
+    
+    <view class="page-body-form-key"  style="margin-top:20px">当前位置：{{formatted_address}}</view>  
+    <view class="page-body-form-key">天气状况：{{weather.type}}</view>  
+    <view class="page-body-form-key">温度：{{weather.high}}</view>
+    <view class="page-body-form-key">风级：{{weather.fl}}</view>
+    <view class="page-body-form-key">风向：{{weather.fx}}</view>  
+    
+ 
+</view>  
+</view>  

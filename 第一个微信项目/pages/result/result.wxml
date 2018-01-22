@@ -1,0 +1,11 @@
+<form bindsubmit="evaSubmit">
+      <view>
+      <picker name="ppp" bindchange="bindPickerChange" value="{{area[areaIndex]}}" range="{{area}}">  
+        <view class="picker">  
+           <text>当前选择：{{area[areaIndex]}} </text> 
+        </view>  
+      </picker> 
+      </view>
+      <textarea name="evaContent" maxlength="500" value="{{evaContent}}" class="weui-textarea" placeholder="填写内容(12-500字)"bindblur="charChange" />          
+      <button formType="submit" disabled="{{subdisabled}}" class="weui-btn mini-btn" type="primary" size="mini">提交</button>
+ </form>

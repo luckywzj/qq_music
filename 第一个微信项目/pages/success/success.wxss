@@ -1,0 +1,11 @@
+page{
+    background-color: #FFFFFF;
+    width:100%;
+    font-size:28rpx;
+}
+.weui-msg__icon-area,
+.weui-msg__title,
+.weui-msg__extra-area{
+    display: flex;
+    justify-content:center;
+}
