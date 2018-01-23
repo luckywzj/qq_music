@@ -5,7 +5,7 @@
  
 </view>
 <view class="line-css"></view>
-<swiper current="{{currentTab}}" class="swiper-box" duration="0"  style="height:2000rpx" bindchange="bindChange">
+<swiper current="{{currentTab}}" class="swiper-box" duration="0"  style="height:200%" bindchange="bindChange">
   <swiper-item  >
     <swiper indicator-dots="{{indicatorDots}}"
       autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">

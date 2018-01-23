@@ -183,7 +183,10 @@ Page({
   topChange:function(e){
     var that=this;
     console.log("ee")
-    that.getTopItem(e.currentTarget.dataset.id)
+    // that.getTopItem(e.currentTarget.dataset.id)
+    wx.navigateTo({
+      url: '../Topitem/Topitem?id='+e.currentTarget.dataset.id
+    })
   },
   getTopItem:function(id){
     wx.request({

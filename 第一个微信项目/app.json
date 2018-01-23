@@ -2,6 +2,9 @@
 {
   "pages":[
     "pages/music/music",
+    "pages/play/play",
+ 
+    "pages/Topitem/Topitem",
     "pages/index/index",
     "pages/result/result",
     "pages/success/success",
