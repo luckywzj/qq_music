@@ -1,0 +1,112 @@
+<!--index.wxml-->
+<view class="content" >
+ <view class="type">
+  <picker name="ppp" bindchange="bindPickerChange" value="{{area[areaIndex]}}" range="{{area}}">  
+    <view class="pickerView">  
+      <text>{{area[areaIndex]!=null ?area[areaIndex]:area[0]}} </text> 
+      <text class="picker">切换</text>
+    </view>  
+  </picker> 
+  
+</view>
+<view class="line-css"></view>
+<view class="swiper-tab">
+  <view class="swiper-tab-list "><text class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">今天</text></view>
+  <view class="swiper-tab-list "><text class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">本周</text></view>
+  <view class="swiper-tab-list "><text class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">本月</text></view>
+  <view class="swiper-tab-list"><text class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">趋势图</text></view>
+</view>
+<view class="line-css"></view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="0" style="height:{{0.83*winHeight}}px" bindchange="bindChange">
+  <swiper-item  >
+  <view style="width:20%">今天</view>
+  <view class="today">
+    <view class="title" >
+      <view>开机次数</view>
+      <view>55521</view>
+    </view>
+    <view class="line-cos"></view>
+    <view class="title" >
+      <view>开机广告CPM</view>
+      <view>55521</view>
+    </view>
+  </view>
+
+  <view class="today">
+    <view class="title" >
+      <view>屏保打开次数</view>
+      <view>55521</view>
+    </view>
+    <view class="line-cos"></view>
+    <view class="title" >
+      <view>屏保广告CPM</view>
+      <view>55521</view>
+    </view>
+  </view> 
+  <view class="line-mid"></view>
+
+
+ <view style="width:20%">昨天</view>
+  <view class="today">
+    <view class="title" >
+      <view>开机次数</view>
+      <view>55521</view>
+    </view>
+    <view class="line-cos"></view>
+    <view class="title" >
+      <view>开机广告CPM</view>
+      <view>55521</view>
+    </view>
+  </view>
+
+  <view class="today">
+    <view class="title" >
+      <view>屏保打开次数</view>
+      <view>55521</view>
+    </view>
+    <view class="line-cos"></view>
+    <view class="title" >
+      <view>屏保广告CPM</view>
+      <view>55521</view>
+    </view>
+  </view> 
+
+  </swiper-item>
+
+  <swiper-item>
+    <canvas canvas-id="pieCanvas" class="canvas"></canvas>
+  </swiper-item>
+
+  <swiper-item>
+    <canvas canvas-id="ringCanvas" class="canvas"></canvas>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="date-pick">
+      <view class="start-day">
+        <picker mode="date" value="{{date}}" start="2015-01-01" end="2100-01-01"  bindchange="bindStarDate">  
+          <view class="picker">  
+            {{stardate}}  
+          </view>  
+        </picker>  
+        <image src="{{imgpull}}" class="slide-image" />
+      </view>
+      <view class="mid-day">--</view>
+      <view class="end-day">
+        <picker mode="date" value="{{date}}" start="2015-01-01" end="2100-01-01" bindchange="bindEndDate">  
+          <view class="picker">  
+            {{enddate}}  
+          </view>  
+        </picker>  
+        <image src="{{imgpull}}" class="slide-image" />
+      </view>
+    </view>
+    <canvas canvas-id="columnCanvas" class="canvas"></canvas>  
+    <canvas  canvas-id="lineCanvas" class="canvas1"></canvas>
+    
+  </swiper-item>
+
+</swiper>
+
+</view>

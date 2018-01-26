@@ -1,41 +1,16 @@
-
 {
   "pages":[
-    "pages/music/music",
-    "pages/play/play",
- 
-    "pages/Topitem/Topitem",
     "pages/index/index",
-    "pages/result/result",
-    "pages/success/success",
-
-    "pages/logs/logs" 
+    "pages/menu/menu",
+    "pages/advert/advert",
+    "pages/kind/kind",
+    "pages/customer/customer"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "墨迹天气",
+    "navigationBarTitleText": "机顶盒数据平台",
     "navigationBarTextStyle":"black"
-  },
-
-  "tabBar": {
-    "selectedColor": "#1d4fd4",
-    "borderStyle":" #000",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "./images/main.png",
-      "selectedIconPath": "./images/mainSelect.png"  
-    },{
-      "pagePath": "pages/music/music",
-      "text": "音乐",
-      "iconPath": "./images/music.png",
-      "selectedIconPath": "./images/musicSelect.png"
-    },{
-      "pagePath": "pages/success/success",
-      "text": "我的",
-      "iconPath": "./images/my.png",
-      "selectedIconPath": "./images/mySelect.png"
-    }]
   }
 }

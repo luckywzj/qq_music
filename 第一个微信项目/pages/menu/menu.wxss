@@ -1,0 +1,31 @@
+/**index.wxss**/
+page{
+
+}
+.container{
+  width:100%;
+  margin-top:80rpx;
+  background:#fff;
+  margin-bottom:30rpx;
+  border-top:1px solid #d9d9d9;
+  border-bottom:1px solid #d9d9d9;
+}
+.menu,
+.menuend{
+  width:90%;
+  margin-bottom:30rpx;
+  margin:0 auto;
+  border-bottom:1px solid #d9d9d9;
+  padding:20rpx 0 20rpx 0rpx
+}
+.menuend{
+   border-bottom:1px solid #fff;
+}
+.slide-image{
+  width:30rpx;
+  height:30rpx;
+  margin-left:50rpx;
+  float:right;
+  margin-right:10rpx;
+  padding-top:12rpx 
+}

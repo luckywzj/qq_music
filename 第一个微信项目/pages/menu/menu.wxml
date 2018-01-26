@@ -1,0 +1,16 @@
+<!--index.wxml-->
+
+<view class="container">
+  <view class="menu" bindtap="active">
+    <text>终端激活数据</text>
+    <image src="{{img}}" class="slide-image" />
+  </view>
+  <view class="menu" bindtap="advert">
+    <text>终端广告数据 </text>
+    <image src="{{img}}" class="slide-image" />
+  </view>
+  <view class="menuend" bindtap="kind">
+    <text>终端品牌排行 </text>
+    <image src="{{img}}" class="slide-image" />
+  </view>
+</view>

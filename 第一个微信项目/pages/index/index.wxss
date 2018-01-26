@@ -1,68 +1,43 @@
-.free-dialog__mask {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-}
-.free-dialog__container {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 750rpx;
-  background: white;
-  transform: translateY(150%);
-  transition: all 0.4s ease;
-  z-index: 11;
-}
-.free-dialog--show .free-dialog__container {
-  transform: translateY(0);
-}
-.free-dialog--show .free-dialog__mask {
-  display: block;
-}
-/*模态框中的内容*/
-.free-button{
-  display: inline-block;
-  width:50px;
-  text-align: center;
-  font-size:20px;
-  color:#707070;
-  margin-bottom:20px;
-}
-.free-dialog-submit{
-  float: right;
-  color:#48c23d;
-}
-radio-group{
-  margin:10rpx 0rpx;
-}
-radio-group>label{
-  width:22.5%;
-  display: inline-block;
-  border:1px solid #ddd;
-  padding:10px 0px;
-  margin:0px 2px 2px;
-}
+/**index.wxss**/
 
-radio-group label radio{
-  width:100%;
-  z-index: 3;
-  display: none;
+.container{
+  width:90%;
+  margin:0 auto;
+  margin-top:20rpx
 }
-.checked{
-  background:#48c23d;
-  color:#fff;
+.name{
+  display: flex;
 }
-radio-group label .free-text{
-  width:100%;
-  text-align: center;
-  display: inline-block;
+.input{
+  margin-left:20px;
 }
-.page-body-form-key{
-    width:90%;
-    margin:0 auto
+.line-css {
+    height: 1rpx;
+    background: #d9d9d9;
+    width:100%;
+    margin: 20rpx 0;
+
+}
+.checkbox{
+  zoom:90%;
+  font-size:1.1em
+}
+.button-hover {
+  background-color: red;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: blue;
+}
+.submit{
+  width:90%;
+  background-color: #256df3;
+  margin-top:100rpx;
+  color:#fff
+}
+.warn{
+  font-size:0.8em;
+  color:red;
+  margin-top:80rpx;
+  margin-left:20%
 }
