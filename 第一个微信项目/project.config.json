@@ -8,15 +8,19 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "1.7.2",
-	"appid": "wx6e6068e16fe3ae45",
-	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"libVersion": "1.9.90",
+	"appid": "wxf0f933b77a536a95",
+	"projectname": "%E9%9F%B3%E4%B9%90%E5%92%8C%E5%A4%A9%E6%B0%94",
 	"condition": {
 		"search": {
 			"current": -1,
 			"list": []
 		},
 		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
 			"current": -1,
 			"list": []
 		},

@@ -1,0 +1,22 @@
+<view class="head_content" >
+  <view class="body_content" >
+    <image class="head_image" src="{{pic_album}}" />
+    <view class="rank" >
+       <view style="font-size:1.2em">{{ListName}}</view>
+       <view style="font-size:1em">第{{total_song_num}}天</view>
+       <view style="font-size:1em">{{update_time}} 更新</view>
+    </view>
+  </view>
+ <button    bindtap="defaultTap" >全部播放</button>
+</view>
+<view style="width:90%;margin:0 auto;font-size:0.9em;padding:10rpx">
+  <text>排行榜  共100首</text>
+</view>
+<view class="line-css"></view>
+<view class="list_item"  bindtap="play_item" data-id="{{item.data.songid}}" wx:for="{{songlist}}">
+  <view class="list_num">{{index+1}}</view>
+  <view class="list_song" >
+    <view>{{item.data.albumname}}</view>
+    <view style="font-size:0.8em ;color:#466666;margin-top:10rpx">{{item.data.singer[0].name}}</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+page{
+}
+.line-css,.line-mid {
+    height: 1rpx;
+    background: #b2b2b2;
+    width:100%;
+    margin: 1rpx 0;
+
+}

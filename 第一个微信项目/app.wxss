@@ -1,14 +1,10 @@
 /**app.wxss**/
 .container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: space-between;
-  padding: 0rpx 0;
-  box-sizing: border-box;
- 
+  left: 0;
+  right: 0;
+  background:#d9d9d9
 } 
 page{
- background:#f9f9f9;
+  background:#f9f9f9
 }

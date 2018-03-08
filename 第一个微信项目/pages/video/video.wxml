@@ -1,0 +1,1 @@
+<video id="myVideo" src="{{playUrl}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>

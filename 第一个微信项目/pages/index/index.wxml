@@ -1,23 +1,22 @@
-<!--index.wxml-->
-<view class="warn">用户名或密码错误，请重试</view>
-<view class="container">
-
-    <view class="name">
-      <text>账号</text>
-      <input class="input" name="userName" bindinput='userNameWord' placeholder="填写账号" focus="{{focus}}" />
+<view class="page-body" style="background-image: url('../../images/tianqi.png')">  
+<view class="page-body-form">  
+    <view  class="page-body-form-key" style="margin-top:20px" bindtap="getLocation">
+      <text class="page-body-form-key">{{city}}</text>  
+      <image style="width:18px;height:15px;" src="./定位.png" />
     </view>
-    <view class="line-css"></view>
-    <view class="name">
-      <text>密码</text>
-      <input class="input" name="password" bindinput='watchPassWord' placeholder="填写密码" focus="{{focus}}" />
-    </view>
-    <view class="line-css"></view>
-  <checkbox-group  bindchange="checkboxChange">
-    <label class="checkbox" wx:for="{{items}}">
-      <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.value}}
-    </label>
-  </checkbox-group>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="page-body-form-key">
+           当前选择：{{city}}
+        </view>
+    </picker>
 
-  <button class="submit" bindtap="primary" > 登录 </button>
-  
-</view>
+    
+    <view class="page-body-form-key"  style="margin-top:20px">当前位置：{{formatted_address}}</view>  
+    <view class="page-body-form-key">天气状况：{{weather.type}}</view>  
+    <view class="page-body-form-key">温度：{{weather.high}}</view>
+    <view class="page-body-form-key">风级：{{weather.fl}}</view>
+    <view class="page-body-form-key">风向：{{weather.fx}}</view>  
+    
+ 
+</view>  
+</view>  

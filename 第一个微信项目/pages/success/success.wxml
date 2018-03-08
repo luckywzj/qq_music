@@ -1,0 +1,16 @@
+<view class="tree-default tree-file"></view>
+<view class="like_person"><text>喜欢的主播</text></view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <view wx:for="{{img}}">
+      <swiper-item data-id="{{item.room_id}}" bindtap="play_view">
+        <image src="{{item.videoSrc}}" class="slide-image"  />
+        <view style="display:flex">
+        <text class="status">{{item.status_title}}</text>
+        <view class="islive">{{item.roomName}}</view>
+        </view>
+        
+      </swiper-item>
+    </view>
+</swiper>
+

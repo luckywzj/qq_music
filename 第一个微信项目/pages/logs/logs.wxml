@@ -1,0 +1,7 @@
+<view class="line-css"></view>
+<scroll-view scroll-y="true" style="height: 600px">
+    <view style="background: red; width: 100px; height: 300px" ></view>
+    <view style="background: green; width: 100px; height: 300px"></view>
+    <view style="background: blue; width: 100px; height: 300px"></view>
+    <view style="background: yellow; width: 100px; height:300px"></view>
+</scroll-view>
