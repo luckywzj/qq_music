@@ -3,5 +3,8 @@
 首页：天气查询
 音乐：qq音乐H5播放页
 我的：斗鱼直播
-  ![image](https://github.com/wuyanzu2017/qq_music/blob/master/第一个微信项目/images/musicSelect.png)
-
+  ![image](https://github.com/wuyanzu2017/qq_music/blob/master/第一个微信项目/images/2.jpg)
+![image](https://github.com/wuyanzu2017/qq_music/blob/master/第一个微信项目/images/4.jpg)
+![image](https://github.com/wuyanzu2017/qq_music/blob/master/第一个微信项目/images/5.jpg)
+![image](https://github.com/wuyanzu2017/qq_music/blob/master/第一个微信项目/images/1.jpg)
+![image](https://github.com/wuyanzu2017/qq_music/blob/master/第一个微信项目/images/3.jpg)
